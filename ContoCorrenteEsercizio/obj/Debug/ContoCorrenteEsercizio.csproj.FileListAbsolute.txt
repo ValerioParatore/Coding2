@@ -1,0 +1,7 @@
+C:\Users\allgr\Desktop\Coding2\ContoCorrenteEsercizio\bin\Debug\ContoCorrenteEsercizio.exe.config
+C:\Users\allgr\Desktop\Coding2\ContoCorrenteEsercizio\bin\Debug\ContoCorrenteEsercizio.exe
+C:\Users\allgr\Desktop\Coding2\ContoCorrenteEsercizio\bin\Debug\ContoCorrenteEsercizio.pdb
+C:\Users\allgr\Desktop\Coding2\ContoCorrenteEsercizio\obj\Debug\ContoCorrenteEsercizio.csproj.AssemblyReference.cache
+C:\Users\allgr\Desktop\Coding2\ContoCorrenteEsercizio\obj\Debug\ContoCorrenteEsercizio.csproj.CoreCompileInputs.cache
+C:\Users\allgr\Desktop\Coding2\ContoCorrenteEsercizio\obj\Debug\ContoCorrenteEsercizio.exe
+C:\Users\allgr\Desktop\Coding2\ContoCorrenteEsercizio\obj\Debug\ContoCorrenteEsercizio.pdb
