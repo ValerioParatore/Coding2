@@ -23,8 +23,8 @@ namespace ContoCorrenteEsercizio
         }
         public void MenuStart1()
         {
-            Console.WriteLine("Apri il tuo contocorrente ");
-            Console.WriteLine("1. Inserisci il tuo nome");
+            Console.WriteLine("Benvenuto!");
+            Console.WriteLine("1. Apri il tuo contocorrente");
             Console.WriteLine("2. Esci");
             int scelta = int.Parse(Console.ReadLine());
 
@@ -43,25 +43,20 @@ namespace ContoCorrenteEsercizio
         {
             Console.WriteLine("Benevenuto " + Name + " " + Cognome);
             Console.WriteLine("Il tuo saldo attuale e' di :" + conto + " Euro");
-            Console.WriteLine("1. Cambia Nome");
-            Console.WriteLine("2. Versamento ");
-            Console.WriteLine("3. Prelievo");
-            Console.WriteLine("4. Esci");
+            Console.WriteLine("1. Versamento ");
+            Console.WriteLine("2. Prelievo");
+            Console.WriteLine("3. Esci");
             int scelta = int.Parse(Console.ReadLine());
-
+            
             if (scelta == 1)
-            {
-                apriNuovoConto();
-            }
-            else if (scelta == 2)
             {
                 avviaVersamento();
             }
-            else if (scelta == 3)
+            else if (scelta == 2)
             {
                 avviaPrelievo();
             }
-            else if (scelta == 4)
+            else if (scelta == 3)
             {
                 Console.WriteLine("Chiusura programma in corso");
             }
@@ -73,6 +68,17 @@ namespace ContoCorrenteEsercizio
             Name = Console.ReadLine();
             Console.WriteLine("Inserisci il cognome");
             Cognome = Console.ReadLine();
+            Console.WriteLine("Ti chiediamo di aprire il conto con un versamento di almeno 1000 euro. Quanto vuoi versare?");
+            int q = int.Parse(Console.ReadLine());
+            if (q <1000)
+            {
+                Console.WriteLine("L'importo emesso e' inferiore ai 1000 euro! La creazione del tuo conto e' stata annullata e verrai riportato al menu' iniziale. ");
+                MenuStart1();
+            }else
+            {
+                versamento(q);
+            }
+            
             Menu2();
         }
         public void avviaVersamento()

@@ -1,0 +1,7 @@
+C:\Users\allgr\Desktop\Coding2\Esercizio2\bin\Debug\Esercizio2.exe.config
+C:\Users\allgr\Desktop\Coding2\Esercizio2\bin\Debug\Esercizio2.exe
+C:\Users\allgr\Desktop\Coding2\Esercizio2\bin\Debug\Esercizio2.pdb
+C:\Users\allgr\Desktop\Coding2\Esercizio2\obj\Debug\Esercizio2.csproj.AssemblyReference.cache
+C:\Users\allgr\Desktop\Coding2\Esercizio2\obj\Debug\Esercizio2.csproj.CoreCompileInputs.cache
+C:\Users\allgr\Desktop\Coding2\Esercizio2\obj\Debug\Esercizio2.exe
+C:\Users\allgr\Desktop\Coding2\Esercizio2\obj\Debug\Esercizio2.pdb
