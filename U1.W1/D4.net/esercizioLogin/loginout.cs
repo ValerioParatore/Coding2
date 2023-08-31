@@ -31,6 +31,9 @@ namespace esercizioLogin
             }else if(scelta == 3)
             {
                 getTime();
+            }else if ( scelta == 4)
+            {
+                showStorico();
             }
         }
         public static bool IsLogin = false;
@@ -38,7 +41,7 @@ namespace esercizioLogin
         public static string Password { get; set; }
         public static string PasswordConferma { get; set; }
         public static DateTime date { get; set; }
-        public static List<string> storico { get; set; }
+        public static List<string> storico { get;} = new List<string>();
 
         public static void logIn()
         {
@@ -76,6 +79,7 @@ namespace esercizioLogin
         {
             if (IsLogin== true) 
             {
+                Name = null; Password = null;
                 IsLogin = false;
                 Console.WriteLine("Logout effettuato!");
                 startMenu() ;
@@ -97,6 +101,14 @@ namespace esercizioLogin
                 Console.WriteLine("Nessun login effettuato fin ora.");
                 startMenu();
             }
+        }
+        public static void showStorico()
+        {
+            foreach(string i in storico)
+            {
+                Console.WriteLine(i);
+            }
+            startMenu();
         }
 
     }
