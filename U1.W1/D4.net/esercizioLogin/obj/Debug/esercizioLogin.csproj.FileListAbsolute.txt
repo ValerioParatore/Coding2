@@ -1,0 +1,7 @@
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioLogin\bin\Debug\esercizioLogin.exe.config
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioLogin\bin\Debug\esercizioLogin.exe
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioLogin\bin\Debug\esercizioLogin.pdb
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioLogin\obj\Debug\esercizioLogin.csproj.AssemblyReference.cache
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioLogin\obj\Debug\esercizioLogin.csproj.CoreCompileInputs.cache
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioLogin\obj\Debug\esercizioLogin.exe
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioLogin\obj\Debug\esercizioLogin.pdb

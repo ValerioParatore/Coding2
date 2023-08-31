@@ -1,0 +1,7 @@
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioMenu\bin\Debug\esercizioMenu.exe.config
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioMenu\bin\Debug\esercizioMenu.exe
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioMenu\bin\Debug\esercizioMenu.pdb
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioMenu\obj\Debug\esercizioMenu.csproj.AssemblyReference.cache
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioMenu\obj\Debug\esercizioMenu.csproj.CoreCompileInputs.cache
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioMenu\obj\Debug\esercizioMenu.exe
+C:\Users\allgr\Desktop\Epicode back-end\U1.W1\D4.net\esercizioMenu\obj\Debug\esercizioMenu.pdb
