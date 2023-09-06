@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EsercizioExtra
+namespace EsercizioExtraCC
 {
     internal class Program
     {
-
         static void Main(string[] args)
         {
-            Appartamenti.start();
+            ContiCorrenti.menuStart();
+            
         }
     }
 }

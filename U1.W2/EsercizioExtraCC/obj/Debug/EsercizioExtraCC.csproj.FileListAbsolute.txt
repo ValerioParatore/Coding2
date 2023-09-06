@@ -1,0 +1,7 @@
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraCC\obj\Debug\EsercizioExtraCC.csproj.AssemblyReference.cache
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraCC\obj\Debug\EsercizioExtraCC.csproj.CoreCompileInputs.cache
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraCC\bin\Debug\EsercizioExtraCC.exe.config
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraCC\bin\Debug\EsercizioExtraCC.exe
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraCC\bin\Debug\EsercizioExtraCC.pdb
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraCC\obj\Debug\EsercizioExtraCC.exe
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraCC\obj\Debug\EsercizioExtraCC.pdb
