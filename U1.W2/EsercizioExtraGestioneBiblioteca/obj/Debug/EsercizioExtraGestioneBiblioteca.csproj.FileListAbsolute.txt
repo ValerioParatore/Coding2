@@ -1,0 +1,7 @@
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraGestioneBiblioteca\bin\Debug\EsercizioExtraGestioneBiblioteca.exe.config
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraGestioneBiblioteca\bin\Debug\EsercizioExtraGestioneBiblioteca.exe
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraGestioneBiblioteca\bin\Debug\EsercizioExtraGestioneBiblioteca.pdb
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraGestioneBiblioteca\obj\Debug\EsercizioExtraGestioneBiblioteca.csproj.AssemblyReference.cache
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraGestioneBiblioteca\obj\Debug\EsercizioExtraGestioneBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraGestioneBiblioteca\obj\Debug\EsercizioExtraGestioneBiblioteca.exe
+C:\Users\allgr\Desktop\Epicode back-end\U1.W2\EsercizioExtraGestioneBiblioteca\obj\Debug\EsercizioExtraGestioneBiblioteca.pdb

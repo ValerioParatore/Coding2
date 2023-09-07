@@ -12,7 +12,7 @@ namespace EsercizioExtraCC
     {
         public string NomeCorrentista { get; set; }
         public string CognomeCorentista { get; set; }
-        public DateTime DataDiApertura = DateTime.Now;
+        public DateTime DataDiApertura { get; set; }
         public int NumeroDiConto { get; set; }
         public double SaldoConto { get; set; }
         public string MovimentoSaldo { get; set; }
@@ -47,11 +47,11 @@ namespace EsercizioExtraCC
             {
                 Console.WriteLine("===== Benvenuto nella gestione conti correnti.");
                 Console.WriteLine("1) Apri Conto corrente.");
-                Console.WriteLine("2) Effettua una operazione");
-                Console.WriteLine("3) Stampa movimenti del cc.");
-                Console.WriteLine("4) Stampa il saldo di tutti i cc.");
+                Console.WriteLine("2) Effettua una operazione di prelievo o versamento.");
+                Console.WriteLine("3) Stampa movimenti del conto corrente.");
+                Console.WriteLine("4) Stampa il saldo di tutti i conti correnti.");
                 Console.WriteLine("5) Esci");
-                Console.Write("Digita un numero:");
+                Console.Write("Digita un numero per effettuare un operazione:");
                 int scelta = int.Parse(Console.ReadLine());
                 if (scelta ==1)
                 {
