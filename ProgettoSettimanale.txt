@@ -1,0 +1,104 @@
+CREATE TABLE ANAGRAFICA (
+    IDAnagrafica INT IDENTITY PRIMARY KEY,
+	Nome NVARCHAR(20) NOT NULL,
+	Cognome NVARCHAR(20) NOT NULL,
+	Indirizzo NVARCHAR(max) NOT NULL,
+	Citta NVARCHAR(50) NOT NULL,
+	CAP INT NOT NULL,
+	Cod_Fiscale NVARCHAR(16) NOT NULL UNIQUE,
+
+)
+
+
+
+
+CREATE TABLE TIPO_VIOLAZIONE (
+    IDViolazione INT IDENTITY PRIMARY KEY,
+	Descrizione	NVARCHAR(max) NOT NULL,
+
+)
+
+
+
+CREATE TABLE Verbale (
+	IDVerbale INT IDENTITY PRIMARY KEY,
+	DataViolazione DATE NOT NULL,
+	IndirizzoViolazione NVARCHAR(max) NOT NULL,
+	Nominativo_Agente NVARCHAR(max) NOT NULL,
+	DataTrascrzioneVerbale DATE NOT NULL,
+	Importo MONEY NOT NULL,
+	DecurtamentoPunti INT NOT NULL,
+	IDViolazione INT ,
+	IDAnagrafica INT,
+
+	CONSTRAINT FK_Verbale_TIPO_VIOLAZIONE FOREIGN KEY (IDViolazione)
+	REFERENCES TIPO_VIOLAZIONE(IDViolazione),
+
+	CONSTRAINT FK_Verbale_ANAGRAFICA FOREIGN KEY (IDAnagrafica)
+	REFERENCES ANAGRAFICA(IDAnagrafica)
+
+)
+
+SELECT COUNT(*) FROM Verbale
+SELECT COUNT(*) FROM Verbale GROUP BY IDAnagrafica
+SELECT COUNT(*) FROM Verbale GROUP BY IDVerbale
+SELECT SUM(DecurtamentoPunti) FROM Verbale GROUP BY IDAnagrafica
+SELECT Nome, Cognome, DataViolazione, Importo, DecurtamentoPunti FROM Verbale
+INNER JOIN 
+ANAGRAFICA ON Verbale.IDAnagrafica = ANAGRAFICA.IDAnagrafica WHERE Citta = 'Palermo'
+SELECT Nome, Cognome, Indirizzo, DataViolazione, Importo, DecurtamentoPunti  FROM Verbale 
+INNER JOIN
+ANAGRAFICA ON Verbale.IDAnagrafica = ANAGRAFICA.IDAnagrafica WHERE DataTrascrzioneVerbale BETWEEN '2009-02' AND '2009-07'
+SELECT SUM(Importo) FROM Verbale GROUP BY IDAnagrafica
+SELECT * FROM ANAGRAFICA WHERE Citta = 'Palermo'
+SELECT DataViolazione, Importo, DecurtamentoPunti FROM Verbale WHERE (DataTrascrzioneVerbale = 2009-05-01)
+SELECT COUNT(*) FROM Verbale GROUP BY Nominativo_Agente
+SELECT Nome, Cognome, Indirizzo, DataViolazione, Importo, DecurtamentoPunti FROM Verbale
+INNER JOIN
+ANAGRAFICA ON Verbale.IDAnagrafica = ANAGRAFICA.IDAnagrafica WHERE DecurtamentoPunti > 5
+SELECT Nome, Cognome, Indirizzo, DataViolazione, Importo, DecurtamentoPunti FROM Verbale
+INNER JOIN 
+ANAGRAFICA ON Verbale.IDAnagrafica = ANAGRAFICA.IDAnagrafica WHERE Importo > 400
+
+
+
+
+=================================STORE PROCEDURE========================================
+
+
+CREATE PROCEDURE ContravvenzioniEffettuateInAnnoX
+       @Anno DATE 
+
+AS
+BEGIN
+
+     SELECT * FROM Verbale WHERE DataViolazione = @Anno
+
+END
+GO
+ ------------------------------------------
+
+CREATE PROCEDURE PuntiDecurtatiInAnnoX
+       @Anno DATE
+AS
+BEGIN
+
+
+       SELECT SUM(*) FROM Verbali WHERE DataViolazione = @Anno
+
+       
+END
+GO
+
+----------------------------------------
+
+
+CREATE PROCEDURE EliminaVerbale
+       @IDverbale INT
+	   AS
+BEGIN
+
+     DELETE FROM Verbale WHERE IDVerbale = @IDverbale
+
+END
+GO
