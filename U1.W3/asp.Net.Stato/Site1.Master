@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="asp.Net.Stato.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="text-center">
+    <form id="form1" runat="server" >
+        <div class="d-flex flex-column align-content-center justify-content-around">
+            <div class="border-bottom border-3 border-dark m-3">
+                <h1 class="m-2">Cinema Epicode pronota qui il biglietto</h1>
+                <a class="text-decoration-none btn btn-dark" href="https://localhost:44342/WebForm2">Acquista biglietti</a>
+                <a class="text-decoration-none btn btn-dark" href="https://localhost:44342/WebForm1">Effettua login</a>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
