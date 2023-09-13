@@ -11,6 +11,7 @@ namespace asp.Net.Stato
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+         
             if (Request.Cookies["ASPNET_COOKIE"]==null)
             {
                 Response.Redirect("https://localhost:44342/WebForm1");
@@ -77,7 +78,6 @@ namespace asp.Net.Stato
                     prs.InnerHtml = $"{Sale.postiRimanentiSud()}";
                 }
             }
-
         }
     }
     public class Sale
