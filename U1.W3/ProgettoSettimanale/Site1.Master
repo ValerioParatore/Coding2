@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ProgettoSettimanale.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="text-light">
+    <form id="form1" runat="server">
+        <div class="text-center">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid text-center">
+                    <a class="navbar-brand text-light" href="#">Epicommerce</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="Default.aspx">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="Carrello.aspx">Carrello</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div> 
+        <div class="d-flex justify-content-around">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="aside">
+                <div class=" border border-2 border-dark m-4">
+                    <img src="Content/imgs/merchant-kale.jpg" />
+                </div>
+                <div class="border border-2 border-dark m-2">
+                    <h3 class="m-3">Bevenuto nell'emporio di Kale!</h3>
+                    <p class="text-light m-3">
+                        You are a Tarnished, I can see it. And I can also see... That you're not after my throat.
+Then why not purchase a little something?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
