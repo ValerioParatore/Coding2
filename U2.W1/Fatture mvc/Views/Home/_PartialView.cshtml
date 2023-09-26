@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "PartialView";
+}
+
+@foreach (Fatture_mvc.Models.Fatture f in Fatture_mvc.Models.Fatture.FattureList)
+{
+    <hr />
+    <h1>Lista Fatture Emesse</h1>
+    <hr />
+    <h3 class="my-4">Fattura ID @f.IDfatture</h3>
+    <h5>Intestatario</h5>
+    <div class="d-flex">
+
+        <p><strong>@f.nomeIntestatario</strong></p>
+        <p><strong>@f.cognomeIntestatario</strong></p>
+    </div>
+
+    <div>
+        <h5>Importo</h5>
+        <p>@f.ammontareFattura</p>
+        <h5>Data emissione</h5>
+        <p>@f.dataEmissione</p>
+    </div>
+
+}
+

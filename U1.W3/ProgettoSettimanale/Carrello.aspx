@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Carrello.aspx.cs" Inherits="ProgettoSettimanale.Carrello" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" EnableEventValidation="false" CodeBehind="Carrello.aspx.cs" Inherits="ProgettoSettimanale.Carrello" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -34,7 +34,9 @@
                             <strong class="text-light">Elimina dal carrello</strong>
                         </HeaderTemplate>
                         <ItemTemplate>
-                            <asp:Button CssClass="btn btn-danger" ID="Button1" ClientIDMode="AutoID" runat="server" Text="Elimina dal carrello" OnClick="Button1_Click" />
+                            <asp:Button CssClass="btn btn-danger" 
+                                ID="Button1" CommandArgument="<%#Item.IDitem %>" runat="server" Text="Elimina dal carrello" 
+                                OnClick="Button1_Click" />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

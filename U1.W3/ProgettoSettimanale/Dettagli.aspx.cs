@@ -37,7 +37,7 @@ namespace ProgettoSettimanale
     }
     public class ItemsCarrello
     {
-        public int IDitem;
+        public int IDitem { get; set; }
         public string NameItem;
         public double PrezzoItem;
         public ItemsCarrello(int id, string nome, double prezzo)

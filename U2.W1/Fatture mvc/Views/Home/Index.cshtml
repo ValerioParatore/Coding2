@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="d-flex">
+    <h1>Numero di fatture emesse:</h1> <span><strong>@Fatture_mvc.Models.Fatture.FattureList.LongCount()</strong></span>
+</div>
+
+@{ 
+    Html.RenderAction("PartialListaFatture");
+}

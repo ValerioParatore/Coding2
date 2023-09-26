@@ -1,0 +1,154 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EpicPharma.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav>
+                <div class="div-logo1">
+                    <img src="Content/imgs/EPIC_PHARMA_ridotto.png"/>
+                </div>
+                <ul class="nav-list">
+                    <il>Home</il>
+                    <il>Accedi</il>
+                    <il>Wish List</il>
+                    <il>Carrello</il>
+                </ul>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div style="height: 1200px">
+            </div>
+
+            <footer>
+                <div id="div-footer">
+                    <div>
+                        <div>
+                            <img class="logo" src="Content/imgs/EPIC_PHARMA_ridotto.png"/>
+                        </div>
+                        <div class="div-span">
+                            <span>Via Renato Embriani 46</span>
+                            <span>34047895432</span>
+                            <span>EpicPharm@email.com</span>
+                        </div>
+                        <div>
+                            icone
+                        </div>
+                    </div>
+                    <div>
+                        <h3>CERCA NEL SITO</h3>
+                        <div class="div-span">
+                            <span>Chi siamo</span>
+                            <span>Promozioni del mese</span>
+                            <span>Offerte</span>
+                            <span>Promozioni</span>
+                            <span>I piu venduti</span>
+                            <span>I nostri brand</span>
+                            <span>Contattaci</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>SERVIZIO CLIENTE</h3>
+                        <div class="div-span">
+                            <span>Il mio account</span>
+                            <span>Hai bisogno di aiuto?</span>
+                            <span>COndzioni d'uso del sito</span>
+                            <span>Privacy Policy</span>
+                            <span>Cookie Pilicy</span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div>
+                   <p class="copyright">EpicPharm 2023 </p>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,100&family=Spectral:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .body-content {
+        padding: 0;
+    }
+}
+/*NAV BAR*/
+nav {
+    color: #f2f2f2;
+    background: rgb(53,73,132);
+    background: linear-gradient(151deg, rgba(53,73,132,1) 1%, rgba(105,135,168,1) 96%);
+    padding: 15px 10px 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list il{
+    margin: 0 15px 0 15px;
+    cursor:pointer;
+
+}
+/*FOOTER*/
+footer {
+    color: #f2f2f2;
+    background: rgb(53,73,132);
+    background: linear-gradient(151deg, rgba(53,73,132,1) 1%, rgba(105,135,168,1) 96%);
+}
+fotter p{
+    margin:0
+}
+#div-footer{
+    margin:15px 0 15px 0;
+    padding:15px 15px 0 15px;
+    display:flex;
+    justify-content:space-around;
+}
+.div-span {
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    cursor:pointer;
+}
+.div-span span {
+        margin: 4px 0 4px 0;
+}
+.copyright {
+    font-size:1em;
+    margin-left: 20vh;
+}

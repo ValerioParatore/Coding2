@@ -19,12 +19,14 @@ namespace ProgettoSettimanale
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-           int id = Convert.ToInt16(Button1.ClientID.ToString());
+            Button btn = (sender as Button);
+           int id = Convert.ToInt32(btn.CommandArgument);
             foreach(ItemsCarrello item in ItemsCarrello.carrellos)
             {
                 if(item.IDitem == id)
                 {
                     ItemsCarrello.carrellos.Remove(item);
+                    break;
                 }
             }
 

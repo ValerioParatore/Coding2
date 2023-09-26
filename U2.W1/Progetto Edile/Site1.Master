@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Progetto_Edile.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="Content/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav>
+                <div>
+                    <img src="Content/imgs/EPIC BUILDEN.png" class="nav-logo"/>
+                </div>
+                <div class="nav-icons">
+                    <div>
+                        <i class="bi bi-house"></i>
+                        <a href="Default.aspx">Home Page</a>
+                    </div>
+                    <div>
+                        <i class="bi bi-file-person"></i>
+                        <a href="Archiviazione.aspx">Inserisci dipendente</a>
+                    </div>
+                    <div>
+                        <i class="bi bi-currency-dollar"></i>
+                        <a href="Pagamento.aspx">Pagamenti</a>
+                    </div>
+                </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <div class="text-center">
+                    <h3>Contatti</h3>
+                </div>
+                <div class="d-flex justify-content-around">
+                    <p>EpicBuilden@email.com</p>
+                    <p>Cell: 333215344</p>
+                    <p>Indirizzo: Via Manzoni 14</p>
+                </div>
+                <div>
+                    <p class="footer-p">SRL epic builden copyright</p>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
