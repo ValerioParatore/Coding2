@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MVC_scarpe.Models.Scarpe>
+
+@{
+    ViewBag.Title = "GrigliaProdotti";
+}
+
+<h2>GrigliaProdotti</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nomeScarpa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prezzoScarpa)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomeScarpa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prezzoScarpa)
+        </td>
+        <td>
+            @Html.ActionLink("Modifica", "Edit", "Home", new { id=item.Id}, new { @class = "btn btn-warning" }) |
+            @Html.ActionLink("Rimuovi", "Delete", "Home", new { id=item.Id }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

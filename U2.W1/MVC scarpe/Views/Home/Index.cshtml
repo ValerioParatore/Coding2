@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@using MVC_scarpe.Models
+
+<main>
+    <div id="div-cards">
+        @foreach (Scarpe s in Model)
+            {
+                <div class="shoes-cards ">
+                    <div>
+                        <img src="~/Content/imgs/@s.imgCopertina" class="logo-card"/>
+                    </div>
+                    <div>
+                        <h4>@s.nomeScarpa</h4>
+                        <p>@s.prezzoScarpa</p>
+                    </div>
+                    <div>
+                        <button>@Html.ActionLink("Dettagli Prodotto", "Dettagli", "Home", new {id = s.Id}, new { @class = "btn btn-success" })</button>
+                    </div>
+                </div>
+            }
+    </div>
+</main>

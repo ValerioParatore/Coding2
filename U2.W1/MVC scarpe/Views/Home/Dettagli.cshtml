@@ -1,0 +1,34 @@
+﻿@model MVC_scarpe.Models.Scarpe
+
+
+
+@using MVC_scarpe.Models
+@{
+    int id = Convert.ToInt16(TempData["idScarpa"]);
+}
+
+<div id="div-dettagli">
+    <h3>@id</h3>
+
+
+
+    <div>
+        <div>
+            <img class="img-cop" src="~/Content/imgs/@Model.imgCopertina" />
+        </div>
+        <div>
+            <div>
+                <img class="other-imgs" src="~/Content/imgs/@Model.imgN2" />
+            </div>
+            <div>
+                <img class="other-imgs" src="~/Content/imgs/@Model.imgN3" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>@Model.nomeScarpa</h1>
+        <p>@Model.descrizioneScarpa</p>
+        <p><strong>@Model.prezzoScarpa</strong></p>
+    </div>
+
+</div>
