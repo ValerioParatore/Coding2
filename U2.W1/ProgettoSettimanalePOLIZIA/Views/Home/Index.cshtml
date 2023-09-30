@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h1>Benvenuto nel gestionale di Epic-Police</h1>
+    <h3>Di cosa hai bisogno?</h3>
+    @Html.ActionLink("Registra Trasgressore", "AnagrafeTra", "AnagrafeTra", new { area = "" }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Lista Violazioni", "Trasgressioni", "Trasgressioni", new { area = "" }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Sezioni Verbali", "Verbali", "Verbali", new { area = "" }, new { @class = "btn btn-primary" })
+</div>
+
