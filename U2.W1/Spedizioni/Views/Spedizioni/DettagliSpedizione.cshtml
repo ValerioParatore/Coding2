@@ -1,0 +1,40 @@
+﻿@model Spedizioni.Models.Spedizione
+@{
+    ViewBag.Title = "DettagliSpedizione";
+}
+
+@using Spedizioni.Models
+<h2>DettagliSpedizione</h2>
+
+<div>
+    <div>
+        <h3>Dettagli</h3>
+        <div>
+            <h3>Mittente</h3>
+            @Html.DisplayFor(m=>m.NomeCliente)
+            <h3>Destinatario</h3>
+            @Html.DisplayFor(m=>m.NomeDestinatario)
+            <h3>Indirizzo consegna</h3>
+            @Html.DisplayFor(m=>m.IndirizzoDestinatario)
+            <h3>Citta consegna</h3>
+            @Html.DisplayFor(m=>m.cittaDestinatario)
+            <h3>Costo spedizione</h3>
+            @Html.DisplayFor(m=>m.Costo)
+            <h3>Peso</h3>
+            @Html.DisplayFor(m=>m.pesoKg)
+            <h3>Data spedizione</h3>
+            @Html.DisplayFor(m=>m.dataSpedizione)
+            <h3>Stima consegna</h3>
+            @Html.DisplayFor(m=>m.dataStimaConsegna)
+            <h3>Codice di spedizione</h3>
+            @Html.DisplayFor(m=>m.codiceSpedizione)
+        </div>
+    </div>
+    <div>
+        <h3>Aggiornamenti</h3>
+        <div>
+            @Html.ActionLink("Stato Spedizione", "statoSpedizione", "Spedizioni", new { id = 1 })
+            @Html.ActionLink("Aggiorna Stato", "addStatoSpedizione", "Spedizioni")
+        </div>
+    </div>
+</div>

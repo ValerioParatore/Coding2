@@ -1,0 +1,50 @@
+﻿@model Spedizioni.Models.StatoSpedizione
+
+@{
+    ViewBag.Title = "statoSpedizione";
+}
+
+<h2>statoSpedizione</h2>
+
+<div>
+    <h4>StatoSpedizione</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.statoSpedizione)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.statoSpedizione)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descrizione)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descrizione)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idSpedizione)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idSpedizione)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

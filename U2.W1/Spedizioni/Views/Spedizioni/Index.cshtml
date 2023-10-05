@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Spedizioni.Models.Spedizione>
+@{
+    ViewBag.Title = "Index";
+    
+    Spedizioni.Models.Spedizione cliente = new Spedizioni.Models.Spedizione();
+    
+}
+
+<h2>Lista Spedizioni</h2>
+
+<p>@Html.ActionLink("Nuova Spedizione", "addSpedizione", "Spedizioni")</p>
+
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.codiceSpedizione)
+        </th>
+        <th>
+            Cliente Privato/Azienda
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.IndirizzoDestinatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.cittaDestinatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.dataSpedizione)
+        </th>
+        <th>
+            Gestione
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.codiceSpedizione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IndirizzoDestinatario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cittaDestinatario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dataSpedizione)
+            </td>
+            <td>
+                <p>@Html.ActionLink("Dettagli", "DettagliSpedizione", "Spedizioni", new { id = item.idSpedizione }, new { @class = "btn btn-warning" })</p>
+            </td>
+        </tr>
+    }
+</table>

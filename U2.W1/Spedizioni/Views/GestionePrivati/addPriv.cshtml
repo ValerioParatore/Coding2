@@ -1,0 +1,66 @@
+﻿@model Spedizioni.Models.Utente 
+@{
+    ViewBag.Title = "addPriv";
+}
+
+<h2>Aggiungi un nuove cliente</h2>
+@using (@Html.BeginForm("addPriv", "GestionePrivati", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+            {
+                <div>
+                    <div>
+                        <div>
+                            @Html.LabelFor(Model => Model.Nome)
+                        </div>
+                        <div>
+                            @Html.EditorFor(Model => Model.Nome)
+                            @Html.ValidationMessageFor(Model => Model.Nome)
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            @Html.LabelFor(Model => Model.Cognome)
+                        </div>
+                        <div>
+                            @Html.EditorFor(Model => Model.Cognome)
+                            @Html.ValidationMessageFor(Model => Model.Cognome)
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            @Html.LabelFor(Model => Model.CodiceFiscale)
+                        </div>
+                        <div>
+                            @Html.EditorFor(Model => Model.CodiceFiscale)
+                            @Html.ValidationMessageFor(Model => Model.CodiceFiscale)
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            @Html.LabelFor(Model => Model.Citta)
+                        </div>
+                        <div>
+                            @Html.EditorFor(Model => Model.Citta)
+                            @Html.ValidationMessageFor(Model => Model.Citta)
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            @Html.LabelFor(Model => Model.Residenza)
+                        </div>
+                        <div>
+                            @Html.EditorFor(Model => Model.Residenza)
+                            @Html.ValidationMessageFor(Model => Model.Residenza)
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            @Html.LabelFor(Model => Model.DataNascita)
+                        </div>
+                        <div>
+                            @Html.EditorFor(Model => Model.DataNascita)
+                            @Html.ValidationMessageFor(Model => Model.DataNascita)
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Aggiungi utente</button>
+                </div>
+            }

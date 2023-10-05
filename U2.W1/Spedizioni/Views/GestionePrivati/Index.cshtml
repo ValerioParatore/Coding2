@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Spedizioni.Models.Utente>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista di clienti</h2>
+<p>@Html.ActionLink("Aggiungi Utente","addPriv","GestionePrivati")</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.Cognome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.CodiceFiscale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.Citta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.Residenza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.DataNascita)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cognome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodiceFiscale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Citta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Residenza)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascita)
+            </td>
+        </tr>
+    }
+</table>

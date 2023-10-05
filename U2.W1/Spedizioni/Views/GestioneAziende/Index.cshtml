@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Spedizioni.Models.Aziende>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista Aziende</h2>
+
+<p>@Html.ActionLink("Aggiungi Azienda", "addAzienda", "GestioneAziende")</p>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeAzienda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.PartitaIVA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.cittaSede)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.IndirizzoSede)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeAzienda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartitaIVA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cittaSede)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IndirizzoSede)
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,49 @@
+﻿@model Spedizioni.Models.Admin
+@{
+    ViewBag.Title = "Login";
+}
+@using (Html.BeginForm())
+{
+
+    <div>
+        <h4>Inserisci i dati per il login</h4>
+        <div>
+            <div>
+                @Html.LabelFor(Model => Model.Username)
+            </div>
+            <div>
+                @Html.EditorFor(Model => Model.Username)
+                @Html.ValidationMessageFor(Model => Model.Username)
+            </div>
+        </div>
+        <div>
+            <div>
+                @Html.LabelFor(Model => Model.Password)
+            </div>
+            <div>
+                @Html.EditorFor(Model => Model.Password)
+                @Html.ValidationMessageFor(Model => Model.Password)
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success">ACCEDI</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+}
+
+
+@if (ViewBag.AuthError != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.AuthError
+    </div>
+}

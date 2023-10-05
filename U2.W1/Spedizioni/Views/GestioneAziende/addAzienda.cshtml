@@ -1,0 +1,49 @@
+﻿@model Spedizioni.Models.Aziende
+@{
+    ViewBag.Title = "addAzienda";
+}
+
+<h2>Aggiungi una nuova azienda</h2>
+
+@using (@Html.BeginForm("addAzienda", "GestioneAziende", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    <div>
+        <div>
+            <div>
+                @Html.LabelFor(Model => Model.NomeAzienda)
+            </div>
+            <div>
+                @Html.EditorFor(Model => Model.NomeAzienda)
+                @Html.ValidationMessageFor(Model => Model.NomeAzienda)
+            </div>
+        </div>
+        <div>
+            <div>
+                @Html.LabelFor(Model => Model.PartitaIVA)
+            </div>
+            <div>
+                @Html.EditorFor(Model => Model.PartitaIVA)
+                @Html.ValidationMessageFor(Model => Model.PartitaIVA)
+            </div>
+        </div>
+        <div>
+            <div>
+                @Html.LabelFor(Model => Model.cittaSede)
+            </div>
+            <div>
+                @Html.EditorFor(Model => Model.cittaSede)
+                @Html.ValidationMessageFor(Model => Model.cittaSede)
+            </div>
+        </div>
+        <div>
+            <div>
+                @Html.LabelFor(Model => Model.IndirizzoSede)
+            </div>
+            <div>
+                @Html.EditorFor(Model => Model.IndirizzoSede)
+                @Html.ValidationMessageFor(Model => Model.IndirizzoSede)
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Aggiungi utente</button>
+    </div>
+}
